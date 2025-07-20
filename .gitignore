@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.env
+env/
+venv/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data, models, and outputs
+data/
+datasets/
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.pb
+*.model
+*.weights
+*.log
+*.tmp
+*.bak
+
+# Experiment logs
+logs/
+runs/
+wandb/
+mlruns/
+
+# Test and coverage
+.pytest_cache/
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build/dist
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# Docker
+*.pid
+
+# Cloud credentials and secrets
+.gcp/
+.aws/
+*.json
+*.pem
+*.key
+
+# Others
+.env
+.env.*
+
+# Emacs temporary files
+*~
+# Emacs autosave files
+# (files starting and ending with #)
+# e.g. #filename#
+\#*\#
