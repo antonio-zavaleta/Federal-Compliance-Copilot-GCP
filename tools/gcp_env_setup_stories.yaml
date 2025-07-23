@@ -1,0 +1,32 @@
+- epic_number: 4
+  title: Create Google Cloud Project
+  body: Create a new Google Cloud project dedicated to the Federal Compliance Copilot. Ensure proper naming conventions and billing account association.
+
+- epic_number: 4
+  title: Set Up IAM Users and Roles
+  body: Define and create IAM users and groups for development and production. Assign least-privilege roles according to team responsibilities and project needs.
+
+- epic_number: 4
+  title: Create Service Accounts
+  body: Create service accounts for application components (e.g., data ingestion, RAG pipeline, API). Assign appropriate roles and generate key files for local development.
+
+- epic_number: 4
+  title: Configure IAM Permissions
+  body: Set up IAM policies to grant necessary permissions to users and service accounts. Restrict access to sensitive resources and enable audit logging for all permission changes.
+
+- epic_number: 4
+  title: Create and Configure GCS Buckets
+  body: Create Google Cloud Storage buckets for storing RFP PDFs and processed data. Set up bucket-level permissions, versioning, and lifecycle management policies.
+
+- epic_number: 4
+  title: Enable Required APIs
+  body: Enable all necessary Google Cloud APIs (e.g., Vertex AI, Document AI, Cloud Storage, IAM, Logging, Monitoring) for the project.
+
+- epic_number: 4
+  title: Set Up Security Best Practices
+  body: Implement security best practices, including enforcing strong authentication, enabling audit logs, and restricting public access to resources.
+
+- epic_number: 4
+  title: Configure Logging and Monitoring
+  body: Set up Cloud Logging and Monitoring to track application and infrastructure events. Create dashboards and alerts for key metrics and errors.
+  
