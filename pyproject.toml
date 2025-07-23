@@ -1,0 +1,19 @@
+[project]
+name = "federal-compliance-copilot-gcp"
+version = "0.1.0"
+description = "An interaction tool with a US Governement RFP contracting document via LLM + RAG."
+authors = [
+    {name = "Antonio Zavaleta",email = "antonio.zavaleta@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "requests (>=2.32.4,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
