@@ -1,0 +1,41 @@
+- epic_number: 5
+  title: Manual Knowledge Base Creation (POC)
+  description: >
+    As a user, I want to manually create a Vertex AI Knowledge Base using the console, so I can validate the workflow with pre-trained embeddings and uploaded PDFs.
+  body: |
+    Use the Vertex AI console to create a new Knowledge Base. Upload a sample set of PDF files and use the default or pre-trained embedding models to populate the Knowledge Base. Document each step and note any manual configuration required.
+
+- epic_number: 5
+  title: PDF to Markdown Conversion with pdfplumber and markdownify
+  description: >
+    As a developer, I want to use pdfplumber to extract text from PDF files and markdownify to convert the content to Markdown, so the data is structured and ready for vector store ingestion.
+  body: |
+    Develop a Python script that uses pdfplumber to extract text and tables from PDF files. Convert the extracted content to Markdown format using markdownify or custom logic. Save the resulting .md files for downstream processing and ingestion.
+
+- epic_number: 5
+  title: Automated Knowledge Base Creation (Python Submodule)
+  description: >
+    As a developer, I want to build a Python submodule that ingests PDFs (or .md files), processes them, and creates/updates a Vertex AI Knowledge Base programmatically, so the process can be repeated and automated.
+  body: |
+    Implement a Python module that takes a directory of PDFs or Markdown files, processes them (including chunking and embedding), and uses the Vertex AI API to create or update a Knowledge Base. Ensure the module is reusable and can be integrated into CI/CD workflows.
+
+- epic_number: 5
+  title: Agentic Data Ingestion
+  description: >
+    As a developer, I want to create an agent that monitors a GCS bucket for new PDFs, automatically converts them to .md using pdfplumber and markdownify, and updates the Knowledge Base, so ingestion is continuous and hands-off.
+  body: |
+    Deploy a GCP Cloud Function or Cloud Run service that triggers on new PDF uploads to a designated GCS bucket. The agent should convert PDFs to Markdown, process the content, and update the Knowledge Base automatically. Include error handling and logging.
+
+- epic_number: 5
+  title: Validation and Testing
+  description: >
+    As a developer, I want to validate that the ingested data is correctly represented in the Knowledge Base and can be queried, so I can ensure data quality and searchability.
+  body: |
+    Develop and run tests to verify that the Knowledge Base contains the expected content from the ingested PDFs/Markdown files. Perform sample queries and compare results to the source documents. Document any discrepancies and refine the ingestion pipeline as needed.
+
+- epic_number: 5
+  title: Documentation and Onboarding
+  description: >
+    As a team member, I want clear documentation for both manual and automated ingestion workflows, so new contributors can easily onboard and operate the system.
+  body: |
+    Write comprehensive documentation covering both the manual POC and automated ingestion workflows. Include setup instructions, usage examples, troubleshooting tips, and onboarding steps for new team members.
