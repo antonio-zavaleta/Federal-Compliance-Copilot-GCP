@@ -8,7 +8,7 @@
 # Usage:
 #   chmod +x gcp_bucket_setup.sh
 #   ./gcp_bucket_setup.sh <BUCKET_NAME> <REGION> [PROJECT_ID] [LIFECYCLE_CONFIG] [--dry-run]
-#
+# 
 # Arguments:
 #   BUCKET_NAME         The name of the GCS bucket to create (required)
 #   REGION              The GCP region for the bucket (required)
@@ -33,7 +33,6 @@
 #
 # Default lifecycle settings: By default, a new GCS bucket has no lifecycle rules set. Objects remain in the bucket until you delete them manually or configure a lifecycle rule.
 #   or
-# ./gcp_bucket_setup.sh rfp-data-src us-east4 federal-compliance-copilot-gcp --dry-run
 # =============================================================================
 
 set -euo pipefail
